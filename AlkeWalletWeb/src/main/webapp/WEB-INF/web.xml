@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>AlkeWalletWeb</display-name>
+ <welcome-file-list>
+    <welcome-file>saldo.jsp</welcome-file>
+</welcome-file-list>
+  
+  <!-- Agregar la configuración del servlet aquí -->
+  <servlet>
+    <servlet-name>WalletController</servlet-name>
+    <servlet-class>AlkeWallet.WalletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WalletController</servlet-name>
+    <url-pattern>/WalletController</url-pattern>
+  </servlet-mapping>
+</web-app>
